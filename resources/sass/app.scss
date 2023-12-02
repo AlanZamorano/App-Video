@@ -1,0 +1,354 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+body{
+    background-color: rgb(45, 46, 46);
+}
+.navbar{
+    height: 4em !important;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.foto-perfil{
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.foto{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid gray;
+    img{
+        padding: 0;
+    }
+}
+.card-body{
+    padding: 5px;
+    h3{
+        color: black;
+        padding: 5px !important;
+    }
+}
+.card-title{
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: space-between ;
+    width: 100%;
+    div{
+        display: inline-flex;
+        align-items: center;
+    }
+    .p{
+        margin-left: 5px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+}
+
+.titulo{
+    display: grid !important;
+    grid-template-columns: 50px auto;
+    align-items: center;
+
+   img{
+    margin-right: 5px;
+   }
+
+}
+.navbar{
+    background-color: rgb(179, 37, 37) !important;
+    a{
+        color: white !important;
+    }
+    a:hover{
+        color: black !important;
+        background-color: #757575 !important;
+    }
+    .dropdown-menu{
+        background-color: rgb(179, 37, 37) !important;
+    }
+}
+.card{
+    background-color: #757575;
+    padding: 0;
+    margin: 15px;
+    border: 1px solid gainsboro !important;
+    border-radius: 5px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .miniatura{
+        height: 200px;
+        width: auto;
+        overflow: hidden;
+    }
+    .comentario{
+        margin: 10px;
+        margin-top: 0;
+    }
+    .videobgc{
+        height: 500px;
+        width: 100% !important;
+        margin: auto;
+        video{
+            width: 100%;
+            background-color: rgb(124, 121, 121);
+        }
+    }
+    .videoH{
+        height: 200px;
+        width: 100% !important;
+        margin: auto;
+        video{
+            width: 100%;
+            background-color: rgb(124, 121, 121);
+        }
+    }
+}
+
+.paginas {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+    li {
+        padding: 5px 10px;
+        background-color: #eee;
+        border-radius: 5px;
+    }
+    .active {
+        background-color: #007bff;
+        color: #fff;
+    }
+}
+
+.bi {
+    font-size: 20px;
+}
+
+.reacciones{
+    display: inline-flex;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-left: 10px;
+    i{
+        margin-right: 5px;
+    }
+    .like{
+        border-right: 1px solid gray;
+        padding: 5px;
+    }
+    .dislike{
+        padding: 5px;
+    }
+}
+
+
+.group {
+    position:relative;
+    margin-bottom:45px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    i{
+        display: flex;
+        align-items: flex-end !important;
+        justify-content: flex-end;
+        margin-bottom: -10px;
+        padding: 0;
+        margin: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    textarea {
+        height: 20px !important;
+        border: none;
+        border-bottom: 1px solid gray;
+        outline: none; /* Elimina el resaltado alrededor del elemento */
+        box-shadow: none; /* Elimina cualquier sombra */
+        padding: 0;
+        border-radius: none !important;
+        text-align: center;
+        &:focus {
+            border: none; /* Elimina el borde inferior al enfocar */
+            outline: none; /* Elimina cualquier estilo de enfoque predeterminado */
+            box-shadow: 0 2px 0 rgb(18, 76, 124);
+        }
+    }
+
+  }
+
+  .error-comentario{
+    textarea{
+        width: 100% !important;
+    }
+
+  }
+  input         {
+    font-size:18px;
+
+    display:block;
+    width: 100%;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+input:focus{
+    outline:none;
+}
+
+h4{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+  .create-comment{
+    display: grid;
+    grid-template-columns: 50px auto;
+    padding: 20px;
+    padding-top: 5px;
+    button{
+        height: 40px;
+        margin-left: 5px;
+    }
+
+  }
+
+  .descripcion{
+    padding: 5px;
+  }
+
+  .mostrar-comentario{
+    padding: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    .head{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+        border-radius: 5px;
+        .head-body{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 5px;
+            .headbody{
+                display: inline-flex;
+            }
+        }
+        .p{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        span{
+            color: gray;
+        }
+    }
+    .descripcion{
+        margin-left: 5px;
+        padding: 0;
+    }
+  }
+
+  .btn-sm{
+    height: 25px !important;
+    width: 25px;
+    padding: 0;
+    i{
+
+        font-size: 15px;
+
+    }
+  }
+.click{
+    color: red;
+}
+
+.click-b{
+    color: #007bff;
+}
+
+.object-fit-md-contain{
+    height: 500px;
+    margin: auto !important;
+
+}
+
+.h{
+    height: 200px;
+    margin: auto !important;
+
+}
+
+.w-100{
+    height: 400px;
+    background-color: rgba(212, 207, 207);
+}
+.carousel-caption{
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 100%;
+    margin-left: -15% !important;
+}
+
+.bg-body-tertiary{
+    position: static;
+}
+.dropdown-item{
+    z-index: 5;
+}
+
+.coment{
+    height: auto !important;
+}
+
+h1, h2, h3, h4, h5{
+    color: white;
+}
+
+span{
+    color: white !important;
+}
+
+.table{
+
+    text-align: center;
+    i{
+
+        padding-right: 3px;
+        padding-left: 3px;
+        border-radius: 5px;
+    }
+    td{
+        border: 0.5px solid rgb(88, 87, 87) !important;
+
+    }
+    span{
+        font-size: 16px;
+    }
+    button{
+        font-size: 16px;
+        border: none;
+    }
+}
